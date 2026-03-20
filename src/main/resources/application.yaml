@@ -1,0 +1,24 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: salvadorquispe
+  data:
+    mongodb:
+      uri: mongodb+srv://29_salvador_quispe:Salvador123@cluster0.frzqutt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: 29_salvador_quispe
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    config-url: /v3/api-docs/swagger-config
+    url: /v3/api-docs
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+
+logging:
+  level:
+    org.springframework.data.mongodb: DEBUG
